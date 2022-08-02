@@ -49,14 +49,14 @@ export default {
   props: {
   },
   methods: {
-    myNav () {
-      const x = document.getElementById('my-nav')
-      if (x.className === 'nav-menu') {
-        x.className += ' responsive'
-      } else {
-        x.className = 'nav-menu'
-      }
-    }
+    // myNav () {
+    //   const x = document.getElementById('my-nav')
+    //   if (x.className === 'nav-menu') {
+    //     x.className += ' responsive'
+    //   } else {
+    //     x.className = 'nav-menu'
+    //   }
+    // }
   }
 }
 </script>
@@ -70,7 +70,6 @@ export default {
 .nav {
   display: flex;
   padding: 1.5rem;
-  width: 70%;
   justify-content: space-between;
   .nav-menu {
     overflow: hidden;
@@ -87,27 +86,6 @@ export default {
     }
     .icon {
       display: none;
-    }
-  }
-  @media screen and (max-width: 600px) {
-    .nav-menu a:not(:first-child) {display: none;}
-    .nav-menu a.icon {
-      float: right;
-      display: block;
-  }
-}
-
-  @media screen and (max-width: 600px) {
-    .nav-menu.responsive {position: relative;}
-    .nav-menu.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .nav-menu.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
     }
   }
 }
